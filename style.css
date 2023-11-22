@@ -1,0 +1,201 @@
+html{
+    box-sizing: border-box;
+    font-size: 60.5%;
+}
+body{
+    min-height: 100vh;
+    background: #000000;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.color{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.neon-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: .3s linear;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    background-image: linear-gradient(to left,
+    rgb(255, 255, 255), rgb(254, 254, 254), black, rgb(35, 31, 31));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move{
+    100% {
+        background-position: 2000px 0;
+    }
+}
+img{
+    width: 100%;
+}
+.velo-negro{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    width: 120px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 120px; /* Puedes ajustar el tamaño según tus necesidades */
+    border-radius: 60%; /* Esto hará que la imagen sea redonda */
+            overflow: hidden; 
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #FA27A1;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #FA5DEE,
+    0 0 50px #FA27A1,
+    0 0 100px #FA27A1;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even) {
+    background: #A900E3;
+    box-shadow: 0 0 0 10px #D25DFA,
+    0 0 50px #A900E3,
+    0 0 10px #A900E3;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}  
+nav{
+    margin: 3rem 0 8rem 0;
+    background-color: #5DADE2;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.letras{
+    font-family: 'DM Serif Display', serif;
+    display: flex;
+}
+nav a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: black;
+}
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10rem;
+    margin-bottom: 20rem;
+    
+    }
+    .nosotros-texto{
+        color: white;
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .nosotros-img{
+        background-color: white;
+        border-radius: 5%;
+    }
+    
+    .bloques{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20rem;
+    }
+    
+    .bloques img{
+        width: 40rem;
+        margin-bottom: 2rem;
+        height: 40rem;
+    }
+    .bloque-titulo{
+        margin:0;
+    }
+    
+    .bloque{
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 5rem;
+    }
+    .bloque-titulo{
+        color: red;
+        font-size: 4rem;
+        margin: 3rem;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    
+    .enlace-footer:hover{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+.footer{
+    background-color: black;
+    padding: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+

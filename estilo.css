@@ -1,0 +1,159 @@
+html{
+    box-sizing: border-box;
+    font-size: 60.5%;
+}
+body{
+    min-height: 100vh;
+    background: #000000;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.logo {
+    width: 120px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 120px; /* Puedes ajustar el tamaño según tus necesidades */
+    border-radius: 60%; /* Esto hará que la imagen sea redonda */
+            overflow: hidden; 
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+img{
+    width: 100%;
+}
+.velo-negro{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.color{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.neon-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: .3s linear;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    background-image: linear-gradient(to left,
+    rgb(255, 255, 255), rgb(254, 254, 254), black, rgb(35, 31, 31));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move{
+    100% {
+        background-position: 2000px 0;
+    }
+}
+nav{
+    margin: 3rem 0 8rem 0;
+    background-color: #5DADE2;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.letras{
+    font-family: 'DM Serif Display', serif;
+    display: flex;
+}
+nav a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+}
+nav a:hover{
+    color: black;
+}
+
+.nustros-productos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.imgt{
+    width: 270px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: 350px;         
+}
+.productos{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+
+   
+}
+.producto{
+    background-color: rgba(55, 225, 255, 0.768);;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.producto-blanco{
+    background-color: white;
+    height: 40rem;
+    object-fit: contain;
+    padding: 2rem;
+}
+
+.producto-precio,
+.producto-nombre{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.producto-precio{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.producto-nombre{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.footer{
+    background-color: black;
+    padding: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+

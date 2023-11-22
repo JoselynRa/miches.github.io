@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <form action="#" method="post" id="miFormulario" onsubmit="return validarFormulario()">
+        <h2>Realiza tu pedido</h2>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="producto">Pago:</label>
+        <select id="producto" name="producto" required>
+            <option value="producto1">Efectivo</option>
+            <option value="producto2">Tarjeta</option>
+            <!-- Puedes agregar más opciones según tus productos -->
+        </select>
+        <label for="numero">Numero Telefonico:</label>
+        <input type="text" id="numero" name="numero" required>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+       <button type="submit">Enviar</button>
+        <button onclick="goBack()">Regresar</button>
+    </form>
+   
+   
+
+</body>
+</html>
